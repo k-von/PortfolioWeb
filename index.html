@@ -5,63 +5,59 @@
   <title>Kayvon Shahir Web Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  
+
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css'>
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
 
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="styles/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Lato:100,400" rel="stylesheet">
 
-  
+
 </head>
 
 <body>
   <header class="center-block">
   <!-- Main Page Banner -->
-  
+
     <div class="jumbotron ">
 <div class="container-fluid">
-      <img src="https://www.dropbox.com/s/m4g8sikwo53lm9r/2000-01-01%2000.00.53.jpg" placeholder=# class="img-circle img-responsive" />
+
       <h1><span>Kayvon Shahir</span>
-    <small><strong>Unleashing the Power of Interactivity</strong></small></h1>
-      <a href=# class="btn btn-primary btn-lg" role="button">
-      My Portfolio
-    </a>
-    </div>
-  </div>
-  <div class="container-fluid">
+    <small>Unleashing the Power of Interactivity</small></h1>
     <div class="row">
-      <div class="col-xs-4">
-        <div class="panel">
-          <h1>Portfolio</h1>
-        </div>
-      </div>
-      <div class="col-xs-4">
-        <div class="panel">
-          <h1>About Me</h1>
-        </div>
-      </div>
-      <div class="col-xs-4">
-        <div class="panel">
-          <h1>Get Funky</h1>
-        </div>
-      </div>
+      <a href="#portfolio" class="btn btn-primary btn-lg btn-block center-block" role="button">
+      My Portfolio</a>
+  </div>
+    <img src="img/Kayvon bw.jpg" placeholder=# class="img-circle img-responsive" />
     </div>
   </div>
+
 
 </header>
 
-<nav>
-  <div class="container nav fixed-top">
-    <ul class="nav nav-pills">
-      <li role="presentation" class="dropdown">
-        <a href=# class="glyphicon glyphicon-chevron-down dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true"></a>
-        <ul class="dropdown-menu">
-          <li><a href=#>Option 1</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href=#>Option 2</a></li>
-        </ul>
-      </li>
-    </ul>
+<nav >
+  <div id="navigation-toggle" class="container fixed-top">
+    <div class="btn btn-group btn-group-vertical" role="group">
+      <button id="MenuToggle" type="button" class="btn btn-primary btn-lg " aria-label="menu" aria-hidden="true" data-parent="#navigation-toggle" data-toggle="collapse" data-target="#MenuOptions" aria-expanded="false"><span class="glyphicon glyphicon-menu-hamburger" ></span></button>
+      <div id="MenuOptions" class="collapse">
+        <div class="btn btn-group-vertical" role="group">
+          <div class="btn-group btn-group-justified" role="group">
+            <a role="button" class="btn btn-primary btn-lg btn-block " href="#intro" onclick="$( '#MenuOptions').collapse('toggle')">About Me</a>
+          </div>
+          <div class="btn-group btn-group-justified" role="group">
+            <a role="button" class="btn btn-primary btn-lg btn-block" href="#portfolio" onclick="$( '#MenuOptions').collapse('toggle')">Portfolio</a>
+          </div>
+          <div class="btn-group btn-group-justified" role="group">
+            <a role="button" class="btn btn-primary btn-lg btn-block" href="#testimonials" onclick="$( '#MenuOptions').collapse('toggle')">Testimonials</a>
+          </div>
+          <div class="btn-group btn-group-justified" role="group">
+            <a type="button" class="btn btn-primary btn-lg btn-block" href="#contact" onclick="$( '#MenuOptions').collapse('toggle')">Contact Me</a>
+          </div>
+      </div>
+      </div>
+
+
+    </div>
   </div>
 
 </nav>
@@ -70,11 +66,19 @@
 
 <section id="intro">
   <div class="container-fluid page-header">
-    <h2>About Kayvon</h2>
-    <p class="lead">My story...</p>
+    <h2>About Me</h2>
+    <p class="lead">Amazing journeys start with a single step...</p>
   </div>
   <div class="container-fluid">
-    <p> A paragraph about why I became a developer, etc...</p>
+    <p>I am a Southern California resident, and I have lived here for most of my life.  I have always had passion for computers and creativity, and had aspirations to do something great in the world of bytes and bits.
+
+    I often joke that when I was born, I came into this world with a keyboard. There's just something amazing about how the interface between a human and machine can create so many amazing ideas.
+
+    This is where I have often spent time pondering about the different ways I can make life better and easier for people by streamlining or automating certain task.  In this age of technology you can see that we rely heavility on computers and what they can do for us.
+
+     I love finding out what makes a website tick, or getting tickled by the amazing aethetics of a website.  There's just something comforting and enticing about a well designed website, that perfectly pairs functionality with aesthetics.
+
+   I will use my talents to make your site speak to your audience and give them a reason to always come back.</p>
   </div>
 
 </section>
@@ -109,18 +113,18 @@
   </div>
 </section>
 
-<section id="Testimonial">
+<section id="testimonials">
   <div class="container-fluid page-header">
     <h2>Testimonials<h2>
     <p class="lead">Read what my clients are saying about my work </p>
-    
+
       <blockquote class="blockquote-reverse">
-        <p><em>Something good about Kayvon's work.</em></p><footer>someone amazing <cite>from company name</cite>  
+        <p><em>Something good about Kayvon's work.</em></p><footer>someone amazing <cite>from company name</cite>
       </blockquote>
   </div>
 </section>
-  
-  <section id="Funky">
+
+  <section id="funky">
     <div class="container-fluid page-header">
       <h2>Funky Stuff</h2>
     <p class="lead"> This is my play-pen where I am experimenting or I have projects that are in progress. You can see the latest and greatest features I am developing for my toolkit.</p>
@@ -129,37 +133,57 @@
     </div>
 </section>
 
-<section id="Contact">
+<section id="contact">
+
   <div class="container-fluid page-header">
     <h2>Contact Me</h2>
-  </div>
-  <div class="container-fluid">
+
     <p>You can contact me via any of the following methods: </p>
   </div>
 
   <div class="container-fluid">
     <div class="row">
+      <div id="contactform" class="col-sm-6">
       <form>
         <div class="form-group form-group-lg">
-          <div class="col-sm-6">
-            <input type="text" class="form-control" id="name" placeholder="Name">
-            <input class="form-control" type="tel" id="phonenumber" placeholder="Phone Number">
-            <input type="email" class="form-control" id="email" placeholder="e-mail">
+            <label for="name" class="control-label"></label>
+            <input type="text" class="form-control input-lg" id="name" placeholder="Name">
+            <label for="phonenumber" class="control-label"></label>
+            <input class="form-control input-lg" type="tel" id="phonenumber" placeholder="Phone Number">
+            <label for="email" class="control-label"></label>
+            <input type="email" class="form-control input-lg" id="email" placeholder="e-mail">
+            <button type="submit" class="form-control input-lg btn btn-lg btn-default btn-block">Send</button>
           </div>
+        </form>
+      </div>
+      <div id="socialmedia" class="col-sm-6 " >
+        <div class="center-block" id="socialcontacts">
+          <h3><em>Contact me via your social app:</em></h3>
+          <a href=# title="facebook"><img class="img-responsive img-thumbnail" src="img/icons/facebook.svg" alt="facebook"></a>
+          <a href=# title="linked-in"><img class="img-responsive img-thumbnail" src="img/icons/linkedin-black.svg" alt="linkedIn"></a>
+          <a href=# title="Twitter"><img class="img-responsive img-thumbnail" src="img/icons/twitter.svg" alt="Twitter"></a>
         </div>
-      </form>
+
+      </div>
+
     </div>
   </div>
+</div>
 </section>
 
-<footer>
+<footer onsubmit="mailto:kayvons@gmail.com">
   <div class="container-fluid">
-   
+   <address>
+     <strong>Kayvon Shahir</strong><br>
+     <abbr title="phone" class="initialism">(P)</abbr>805.551.1394<br>
+     <abbr title="email" class="initialism">(e)</abbr><a href="mailto:kayvons@gmail.com" >kayvons@gmail.com</a><br>
+
+   </address>
   </div>
 </footer>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
 
-  
+
 </body>
 </html>
